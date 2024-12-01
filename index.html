@@ -44,6 +44,35 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #444;
+        }
+        .update-card {
+            border-left: 4px solid #333;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -51,14 +80,51 @@
     <p>This is a simple demonstration page for our new society project.</p>
     <nav>
         <ul>
+            <li><a href="#mission">Mission</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#updates">Updates</a></li>
+            <li><a href="#join">Join Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>We are committed to building a better future through collaboration, innovation, and shared knowledge. Our mission is to create a platform where ideas can flourish and communities can thrive together.</p>
+    </section>
+
     <section id="about">
         <h2>About Us</h2>
-        <p>We are a community dedicated to exploring new ideas.</p>
+        <p>We are a community dedicated to exploring new ideas and fostering meaningful connections between people who want to make a difference.</p>
     </section>
+
+    <section id="updates">
+        <h2>Latest Updates</h2>
+        <div class="update-card">
+            <h3>New Website Launch</h3>
+            <p>We're excited to announce the launch of our new website!</p>
+        </div>
+        <div class="update-card">
+            <h3>Community Meetup</h3>
+            <p>Join us for our monthly community meetup this weekend.</p>
+        </div>
+    </section>
+
+    <section id="join">
+        <h2>Join Us</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Get in touch with us at: example@email.com</p>
